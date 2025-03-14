@@ -1,0 +1,15 @@
+"browserslist": [
+    "Edge 16",
+    "last 2 versions",
+    "not dead",
+    "Opera >= 15"
+],
++ "postcss": {
++   "plugins": {
++     "autoprefixer": {}
++   }
++ },
+  "scripts": {
++   "build:css": "postcss src/app.css -o build/app.css",
++   "build": "npm run build:css"
+  }
